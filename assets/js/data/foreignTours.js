@@ -1,0 +1,108 @@
+const foreignTours = [
+  {
+    tourTitle: "Tour Hè Hàn Quốc - Seoul - Jeju - Nami - Everland",
+    tourTime: "6 ngày 5 đêm",
+    tourSchelude: "21/05/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "24,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-du-lich-han-quoc-he-cong-vien-everland-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Hè Hàn Quốc - Busan - Daegu - Seoul - Đảo Nami - Làng Cổ Bukchon",
+    tourTime: "5 ngày 5 đêm",
+    tourSchelude: "29/05/2024",
+    tourPlace: "Còn 9 chỗ",
+    tourPrice: "20,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-han-quoc-busan-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Hàn Quốc Hè 2024 - Seoul - Lotte World - Đảo Nami - Tháp Namsan",
+    tourTime: "4 ngày 3 đêm",
+    tourSchelude: "22/06/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "15,499,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-du-lich-han-quoc-mua-he-gia-tot-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Nhật Bản mùa Hè - Osaka - Kobe - Kyoto - Tokyo - Fuji - Seaworld",
+    tourTime: "6 ngày 5 đêm",
+    tourSchelude: "15/08/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "36,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/di-tour-nhat-ban-mua-he-2024-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Nhật Bản mùa Hè - Osaka - Kyoto - Yamanashi - Fuji - Tokyo",
+    tourTime: "5 ngày 5 đêm",
+    tourSchelude: "28/07/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "27,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-nhat-ban-yamanashi-mua-he-du-lich-viet.jpg",
+  },
+  {
+    tourTitle: "Tour Nhật Bản mùa Hè - Monbetsu - Asahikawa - Sapporo - Otaru",
+    tourTime: "6 ngày 6 đêm",
+    tourSchelude: "20/06/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "38,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-nhat-ban-mua-he-otaru-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Nhật Bản mùa Hè - Monbetsu - Asahikawa - Sapporo - Otaru - Tokyo",
+    tourTime: "6 ngày 6 đêm",
+    tourSchelude: "29/08/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "39,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/du-lich-nhat-ban-Tokyo-Skytree-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Hàn Quốc Hè 2024 - Seoul - Everland - Đảo Nami - Tháp Namsan",
+    tourTime: "4 ngày 4 đêm",
+    tourSchelude: "25/05/2024",
+    tourPlace: "Còn 3 chỗ",
+    tourPrice: "14,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-he-dao-nami-du-lich-viet.jpg",
+  },
+  {
+    tourTitle: "Tour Nhật Bản mùa Hè - Tokyo - Hakone - Fuji - Odaiba",
+    tourTime: "5 ngày 4 đêm",
+    tourSchelude: "24/05/2024",
+    tourPlace: "Còn 5 chỗ",
+    tourPrice: "22,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-du-lich-nhat-ban-mua-he-gia-tot-du-lich-viet.jpg",
+  },
+  {
+    tourTitle:
+      "Tour Nhật Bản mùa Hè - Osaka - Kobe - Kyoto - Yamanashi - Fuji - Tokyo",
+    tourTime: "5 ngày 5 đêm",
+    tourSchelude: "25/05/2024",
+    tourPlace: "Còn 8 chỗ",
+    tourPrice: "26,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-nhat-ban-mua-he-gia-tot-du-lich-viet-2024.jpg",
+  },
+  {
+    tourTitle: "Tour Nhật Bản mùa Hè - Tokyo - Fuji - Chiba - Seaworld",
+    tourTime: "4 ngày 4 đêm",
+    tourSchelude: "13/06/2024",
+    tourPlace: "Còn 10 chỗ",
+    tourPrice: "23,999,000 đ",
+    startPlace: "Từ Hồ Chí Minh",
+    cardPicture: "assets/images/tour-nhat-ban-mua-he-gia-tot-du-lich-viet.jpg",
+  },
+];

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Đặt tour du lịch online</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <!-- Fonts -->
+  <!-- CSS files -->
+  <link rel="stylesheet" href="assets/css/font-awesome.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/image-hover.css">
+  <link href="assets/css/aos.css" rel="stylesheet" />
+  <!-- CSS files -->
+  <!-- JavaScript files -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/sweetalert.min.js"></script>
+  <script src="assets/js/data/vietnamTours.js"></script>
+  <script src="assets/js/data/foreignTours.js"></script>
+  <script src="assets/js/app.js"></script>
+  <!-- JavaScript files -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 75%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="fixed-top">
+    <div id="top-notification" class="d-none d-lg-block">
+      <div class="p-1" style="background-color: #041675">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="fw-bold text-white d-flex">
+                <p class="h4 mx-2 flash-contact">HOTLINE: 0335237597</p>
+              </span>
+              <div class="d-none d-lg-block topbar-features">
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="account.html" class="nav-link text-white fw-semibold"><i
+                        class="fa-solid fa-right-to-bracket mx-2"></i><span>Tài khoản</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-white fw-semibold"><i
+                        class="fa-solid fa-envelope fa mx-2"></i><span>Góp ý</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Navigation bar -->
+    <nav class="navbar" style="background-color: #030f16">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Application logo" class="application-logo" />
+        </a>
+      </div>
+      <div class="d-none d-lg-block navbar-features">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white fw-semibold"><span class="h4 navbar-textlink active">TRANG
+                CHỦ</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white fw-semibold"><span class="h4 navbar-textlink">THUÊ XE</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white fw-semibold"><span class="h4 navbar-textlink">KHÁCH SẠN</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white fw-semibold"><span class="h4 navbar-textlink">TIN TỨC</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-white fw-semibold"><span class="h4 navbar-textlink">GIỚI THIỆU</span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- Offcanvas -->
+      <button class="navbar-toggler block d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h3 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <a class="text-decoration-none" style="color: #58b2e6" href="index.html">TRAVIZARD</a>
+          </h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active p-3 fw-semibold" href="index.html"><i class="fa-solid fa-home mx-2"></i>Trang
+                chủ</a>
+            </li>
+            <hr />
+            <li class="nav-item">
+              <a class="nav-link p-3 fw-semibold" href="account.html"><i
+                  class="fa-solid fa-right-to-bracket mx-2"></i>Tài khoản</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-3 fw-semibold" href="contact.html"><i class="fa-solid fa-envelope mx-2"></i>Góp ý</a>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Offcanvas -->
+    </nav>
+    <!-- Navigation bar -->
+  </div>
+  <!-- Page content -->
+  <div class="container-fill">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://i.pinimg.com/736x/55/df/e3/55dfe3bd497c1b4e71227d343b8eedfa.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.pinimg.com/736x/55/df/e3/55dfe3bd497c1b4e71227d343b8eedfa.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.pinimg.com/736x/55/df/e3/55dfe3bd497c1b4e71227d343b8eedfa.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.pinimg.com/736x/55/df/e3/55dfe3bd497c1b4e71227d343b8eedfa.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://i.pinimg.com/736x/55/df/e3/55dfe3bd497c1b4e71227d343b8eedfa.jpg" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="row p-3 mt-2 tour-types d-flex justify-content-center" data-aos="fade-right">
+      <div class="col-lg-4 d-flex justify-content-center align-items-center tour-type m-2 p-4">
+        <i class="fa-solid fa-glasses fa-xl mx-2"></i>Du lịch TRONG NƯỚC
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center align-items-center tour-type m-2 p-4">
+        <i class="fa-solid fa-wine-glass fa-2x mx-2"></i>Du lịch NƯỚC NGOÀI
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center align-items-center tour-type m-2 p-4">
+        <i class="fa-solid fa-bus fa-xl mx-2"></i>Cho thuê XE DU LỊCH
+      </div>
+      <div class="col-lg-4 d-flex justify-content-center align-items-center tour-type m-2 p-4">
+        <i class="fa-solid fa-hotel fa-xl mx-2"></i>Cho thuê PHÒNG TRỌ
+      </div>
+    </div>
+    <!-- Vietnam tours swiper -->
+    <div class="d-flex justify-content-between align-items-center mx-5 mt-5 mb-3">
+      <a class="tours-heading-link">TOUR TRONG NƯỚC</a>
+      <a class="tours-heading-link"><i class="fa-solid fa-list mx-2"></i>Xem tất cả</a>
+    </div>
+    <div class="px-5 mb-5" data-aos="fade-right">
+      <div class="vietnam-tours-swiper">
+        <div class="swiper-wrapper" id="vietnamTours">
+          <!-- Chỗ này dùng JavaScript để render dữ liệu, vì bỏ HTML vô này nó rất là dài -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- Vietnam tours swiper -->
+    <!-- Foreign tours swiper -->
+    <div class="d-flex justify-content-between align-items-center mx-5 mt-5 mb-3">
+      <a class="tours-heading-link">TOUR NƯỚC NGOÀI</a>
+      <a class="tours-heading-link"><i class="fa-solid fa-list mx-2"></i>Xem tất cả</a>
+    </div>
+    <div class="px-5 mb-5" data-aos="fade-right">
+      <div class="foreign-tours-swiper">
+        <div class="swiper-wrapper" id="foreignTours">
+          <!-- Chỗ này dùng JavaScript để render dữ liệu, vì bỏ HTML vô này nó rất là dài -->
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+    <!-- Foreign tours swiper -->
+    <div class="page-footer">
+      <div class="footer-content">
+        <div class="mt-3">
+          <p class="mb-1 fw-semibold" style="color: #1b448e;">Chấp nhận thanh toán</p>
+          <img src="assets/images/payment-methods.png" alt="Payment methods" />
+        </div>
+        <div class="mt-3">
+          <p class="mb-1 fw-semibold" style="color: #1b448e;">Kết nối với chúng tôi</p>
+          <ul class="d-flex social-links">
+            <li class="social-link me-2">
+              <a href="https://www.facebook.com/dulichviet/" aria-label="facebook" class="fa-brands fa-facebook fa-2x" target="_blank"></a>
+            </li>
+            <li class="social-link me-2">
+              <a href="https://www.facebook.com/dulichviet/" aria-label="facebook" class="fa-brands fa-twitter fa-2x" target="_blank"></a>
+            </li>
+            <li class="social-link me-2">
+              <a href="https://www.facebook.com/dulichviet/" aria-label="facebook" class="fa-brands fa-discord fa-2x" target="_blank"></a>
+            </li>
+            <li class="social-link me-2">
+              <a href="https://www.facebook.com/dulichviet/" aria-label="facebook" class="fa-brands fa-wordpress fa-2x" target="_blank"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-3" id="receiveNotificationForm">
+          <p class="mb-1 fw-semibold" style="color: #1b448e;">Đăng ký nhận tin khuyến mãi</p>
+          <form>
+            <div class="form-floating mb-3 d-flex">
+              <input type="email" class="form-control align-self-center w-75" id="floatingEmailInput" placeholder="name@example.com">
+              <label for="floatingEmailInput" style="font-size: 0.75rem;">Địa chỉ email</label>
+              <button class="btn btn-success m-1 w-25 text-center align-self-center" type="button" style="font-size: 1rem; padding: 0.85rem;">Đăng ký</button>
+            </div>            
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Page content -->
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    new Swiper(".swiper", {
+      autoplay: {
+        delay: 5000,
+      },
+      cssMode: true,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+
+    new Swiper(".vietnam-tours-swiper", {
+      autoplay: {
+        delay: 5000,
+      },
+      cssMode: true,
+      simulateTouch: false,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+      },
+    });
+
+    new Swiper(".foreign-tours-swiper", {
+      autoplay: {
+        delay: 5000,
+      },
+      cssMode: true,
+      simulateTouch: false,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>
